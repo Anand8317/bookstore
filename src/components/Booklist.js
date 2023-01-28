@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Book from './Book';
 import BookForm from './Bookform';
 
 export default function Booklist() {
-  const [books] = useState([{
+  const books = [{
     id: 1,
     title: 'One',
     author: 'One by One',
@@ -12,7 +12,7 @@ export default function Booklist() {
     id: 2,
     title: 'Two',
     author: 'Two by Two',
-  }]);
+  }];
 
   return (
     <div>
