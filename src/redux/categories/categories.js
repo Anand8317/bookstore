@@ -1,4 +1,4 @@
-const CHECKSTATUS = 'my-app/categories/CHECKSTATUS';
+const CHECKSTATUS = 'bookstore/categories/CHECKSTATUS';
 
 const initialState = [];
 
