@@ -1,9 +1,12 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import BookForm from './Bookform';
+import { fetchBookAction } from '../redux/books/books';
 
 export default function Booklist() {
+  const dispatch = useDispatch();
+  useEffect(() => { dispatch(fetchBookAction()); }, [dispatch]);
   const books = useSelector((state) => state.booksReducer);
 
   return (
@@ -14,8 +17,8 @@ export default function Booklist() {
             <Book
               title={book.title}
               author={book.author}
-              key={book.id}
-              id1={book.id}
+              key={book.item_id}
+              id1={book.item_id}
             />
           ))}
         </ul>
