@@ -9,8 +9,9 @@ export default function Category() {
   };
 
   return (
-    <div>
-      <button type="button" onClick={clickHandler}>Check Status</button>
+    <div className="categoryContainer">
+      <h1>Under construction</h1>
+      <button type="submit" className="categoryBookBtn" onClick={clickHandler}>Check Status</button>
     </div>
   );
 }

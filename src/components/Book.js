@@ -30,43 +30,36 @@ export default function Book(props) {
         </div>
       </div>
 
-      <div className="prog-chapt">
+      <div className="progressContainer">
         <div className="progressBar">
           <Progress
             type="circle"
             width={80}
             format={() => ''}
             strokeWidth={10}
-            strokeColor={{
-              '0%': '#307bbe',
-              '100%': '#379cf6',
-            }}
+            strokeColor={{ '0%': '#307bbe', '100%': '#379cf6' }}
             trailColor="#e8e8e8"
             percent={progress}
           />
           <div className="percent">
             <h2 id="percent">
-              {progress}
-              %
+              {' '}
+              {progress.toString().concat('%')}
+              {' '}
             </h2>
             <p>Completed</p>
           </div>
         </div>
-        <div className="currentChapt">
-          <p id="chapthead">CURRENT CHAPTER</p>
-          <p id="chaptname">
-            Chapter
-            {chapter}
+        <div className="chapter">
+          <p id="chapterHead">CURRENT CHAPTER</p>
+          <p id="chapterName">
+            {'Chapter '.concat(chapter)}
+            {' '}
           </p>
           <button id="update" type="button">UPDATE PROGRESS</button>
         </div>
       </div>
     </div>
-    // <li>
-    //   <h3>{title}</h3>
-    //   <p>{author}</p>
-    //   <button type="button" onClick={clickHandler}>Delete</button>
-    // </li>
   );
 }
 

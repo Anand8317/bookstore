@@ -101,14 +101,14 @@ h2 {
 
 #title,
 #author,
-#chapthead,
-#chaptname,
+#chapterHead,
+#chapterName,
 #update {
   font-family: 'Roboto Slab', serif;
 }
 
 #author {
-  color: #0290ff;
+  color: #4386bf;
   font-size: 0.8rem;
 }
 
@@ -116,7 +116,6 @@ button {
   cursor: pointer;
 }
 
-.categories-page h4,
 button {
   margin: auto;
   text-align: center;
@@ -125,7 +124,7 @@ button {
 .buttonsContainer button {
   background: transparent;
   border: none;
-  color: #0290ff;
+  color: #4386bf;
   font-family: 'Roboto Slab', serif;
   padding-left: 0;
   padding-right: 1rem;
@@ -144,26 +143,7 @@ button {
   font-weight: 300;
 }
 
-input {
-  padding: 1%;
-  width: 25%;
-  border: 1px solid rgb(199, 199, 199);
-  color: black;
-}
-
-select {
-  padding: 1%;
-  width: 25%;
-  border: 1px solid rgb(199, 199, 199);
-}
-
-form {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 4%;
-}
-
-#chapthead {
+#chapterHead {
   font-size: 0.8rem;
   color: rgb(173, 173, 173);
   font-weight: 500;
@@ -179,30 +159,65 @@ form {
   border-radius: 2px;
 }
 
-.currentChapt {
+.chapter {
   margin-left: 10%;
 }
 
-.prog-chapt {
+.progressContainer {
   display: flex;
   margin-right: 5%;
 }
 
-#user-icon {
-  font-size: 3rem;
-  color: #0290ff;
-  margin-left: auto;
+.addBookH2 {
+  margin: 15px 0;
+  font-size: 1.4rem;
+  border-top: 2px solid rgb(218, 221, 223);
+  padding-top: 20px;
+  color: rgb(156, 155, 155);
 }
 
-.add-book {
-  width: 25%;
-  color: rgb(239, 239, 239);
-  background: #0290ff;
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form input[type=text]:focus {
+  border: 1px solid rgb(31, 174, 199);
+}
+
+form input[type=text],
+select,
+.addBtn {
+  height: 50px;
+  width: 450px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  color: rgb(39, 37, 37);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.addBookBtn {
+  width: 30%;
+  height: 50px;
+  background: rgb(59, 155, 219);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
   border: none;
-  padding: 1.1%;
-  border-radius: 3px;
 }
 
-#add-title {
-  color: rgb(126, 126, 126);
+.categoryContainer {
+  padding: 4%;
+}
+
+.categoryBookBtn {
+  width: 10%;
+  height: 30px;
+  background: rgb(59, 155, 219);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  border: none;
 }

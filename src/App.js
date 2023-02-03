@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <nav className="nav-bar">
-        <a className="nav-brand" href="#/">Bookstore CMS</a>
+        <Link to="/" className="nav-brand" href="#/">Bookstore CMS</Link>
         <ul className="nav-links">
           <li><Link to="/" aria-current="page" className="nav-link active-link" href="#/">BOOKS</Link></li>
           <li><Link to="/category" className="nav-link" href="#/categories">CATEGORIES</Link></li>
@@ -18,12 +18,6 @@ function App() {
           </span>
         </button>
       </nav>
-      {/* <nav>
-        <ul classNameName="nav-link">
-          <li><Link to="/">Book List</Link></li>
-          <li><Link to="/category">Category</Link></li>
-        </ul>
-      </nav> */}
       <Routes>
         <Route path="/" element={<Booklist />} />
         <Route path="/category" element={<Category />} />
