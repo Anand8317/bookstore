@@ -3,9 +3,10 @@ import { useDispatch } from 'react-redux';
 import { addBookAction } from '../redux/books/books';
 
 const bookObject = (title, author) => ({
-  id: Math.random().toString(36),
+  item_id: Math.random().toString(36),
   title,
   author,
+  category: 'Fiction',
 });
 
 export default function Bookform() {
