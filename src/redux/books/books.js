@@ -1,7 +1,16 @@
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
-const initialState = [];
+const initialState = [{
+  id: '1',
+  title: 'One',
+  author: 'One by One',
+},
+{
+  id: '2',
+  title: 'Two',
+  author: 'Two by Two',
+}];
 
 export function addBookAction(book) {
   return {
@@ -19,7 +28,7 @@ export function removeBookAction(key) {
 
 export default function booksReducer(state = initialState, action) {
   switch (action.type) {
-    case ADD: return state.push(action.book);
+    case ADD: return [...state, action.book];
     case REMOVE: {
       const index = state.findIndex((obj) => obj.id === action.key);
       return [
