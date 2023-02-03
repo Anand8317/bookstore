@@ -6,7 +6,7 @@ const bookObject = (title, author) => ({
   item_id: Math.random().toString(36),
   title,
   author,
-  category: 'Fiction',
+  category: 'Friction',
 });
 
 export default function Bookform() {
