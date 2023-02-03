@@ -25,7 +25,7 @@ body {
 }
 
 .nav-brand {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
   color: #0290ff;
@@ -49,15 +49,11 @@ a {
 }
 
 .nav-link {
-  opacity: .5;
-  font-family: "Montserrat",sans-serif;
-  font-size: .813rem;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
   color: #121212;
   letter-spacing: 1.9px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .icon-button {
@@ -114,9 +110,6 @@ h2 {
 
 button {
   cursor: pointer;
-}
-
-button {
   margin: auto;
   text-align: center;
 }
@@ -182,10 +175,6 @@ form {
   gap: 10px;
 }
 
-form input[type=text]:focus {
-  border: 1px solid rgb(31, 174, 199);
-}
-
 form input[type=text],
 select,
 .addBtn {
@@ -198,6 +187,10 @@ select,
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
+}
+
+form input[type=text]:focus {
+  border: 1px solid rgb(31, 174, 199);
 }
 
 .addBookBtn {
