@@ -20,9 +20,9 @@ export default function Book(props) {
   return (
     <div className="bookContainer">
       <div className="book-and-button">
-        <p id="category">{category}</p>
-        <h2 id="title">{title}</h2>
-        <p id="author">{author}</p>
+        <p className="category">{category}</p>
+        <h2 className="title">{title}</h2>
+        <p className="author">{author}</p>
         <div className="buttonsContainer">
           <button type="button">Comments</button>
           <button type="button" onClick={clickHandler}>Remove</button>
@@ -42,7 +42,7 @@ export default function Book(props) {
             percent={progress}
           />
           <div className="percent">
-            <h2 id="percent">
+            <h2>
               {' '}
               {progress.toString().concat('%')}
               {' '}
@@ -51,12 +51,12 @@ export default function Book(props) {
           </div>
         </div>
         <div className="chapter">
-          <p id="chapterHead">CURRENT CHAPTER</p>
-          <p id="chapterName">
+          <p className="chapterHead">CURRENT CHAPTER</p>
+          <p className="chapterName">
             {'Chapter '.concat(chapter)}
             {' '}
           </p>
-          <button id="update" type="button">UPDATE PROGRESS</button>
+          <button className="update" type="button">UPDATE PROGRESS</button>
         </div>
       </div>
     </div>

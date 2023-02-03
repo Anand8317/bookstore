@@ -90,20 +90,20 @@ h2 {
   margin: 0;
 }
 
-#category {
+.category {
   font-weight: 700;
   color: rgb(119, 119, 119);
 }
 
-#title,
-#author,
-#chapterHead,
-#chapterName,
-#update {
+.title,
+.author,
+.chapterHead,
+.chapterName,
+.update {
   font-family: 'Roboto Slab', serif;
 }
 
-#author {
+.author {
   color: #4386bf;
   font-size: 0.8rem;
 }
@@ -136,13 +136,13 @@ button {
   font-weight: 300;
 }
 
-#chapterHead {
+.chapterHead {
   font-size: 0.8rem;
   color: rgb(173, 173, 173);
   font-weight: 500;
 }
 
-#update {
+.update {
   color: rgb(239, 239, 239);
   background: #0290ff;
   border: none;
