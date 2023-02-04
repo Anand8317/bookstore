@@ -10,18 +10,17 @@ export default function Booklist() {
   const books = useSelector((state) => state.booksReducer);
 
   return (
-    <div>
+    <div className="booksContainer">
       <div>
-        <ul>
-          {books.map((book) => (
-            <Book
-              title={book.title}
-              author={book.author}
-              key={book.item_id}
-              id1={book.item_id}
-            />
-          ))}
-        </ul>
+        {books.map((book) => (
+          <Book
+            title={book.title}
+            author={book.author}
+            key={book.item_id}
+            id1={book.item_id}
+            category={book.category}
+          />
+        ))}
       </div>
       <BookForm />
     </div>
